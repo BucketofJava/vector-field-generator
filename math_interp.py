@@ -1,7 +1,10 @@
 import math
+import mpmath
 def empty(x):
     return x;
-op_dict={'':empty, '_':None, '+':float.__add__, '-':float.__sub__, '*':float.__mul__, '/':float.__truediv__, 'sin':math.sin, 'cos':math.cos, 'tan':math.tan}
+op_dict={'':empty, '_':None, '+':float.__add__, '-':float.__sub__, '*':float.__mul__, '/':float.__truediv__, '^':math.pow,
+ 'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'csc':mpmath.csc, 'sec':mpmath.sec, 'cot':mpmath.cot,
+ 'asin':math.asin, 'acos':math.acos, 'atan':math.atan, 'acsc':mpmath.acsc, 'asec':mpmath.asec, 'acot':mpmath.acot}
 ops=list(op_dict.keys())
 class func_parser():
     def __init__(self, func_unit):

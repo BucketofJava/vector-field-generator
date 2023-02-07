@@ -40,7 +40,7 @@ for i in range(grid_size_x-1):
             #     print(y_increase)
             canvas.create_line(20*(i+1), 20*(j+1), 20*(i+1)+20*x_increase, 20*(j+1)+20*y_increase, fill="purple", arrow=LAST, smooth=True, width=2)
 canvas.create_line(0, middle_y+20, 1000, middle_y+20, width=2, fill="blue")
-canvas.create_line(middle_x-20, 0, middle_x-20, 750, width=2, fill="blue")
+canvas.create_line(middle_x, 0, middle_x, 750, width=2, fill="blue")
 
 #canvas.create_rectangle(0, 0, (100), (100), width=0.25)
 canvas.pack()
